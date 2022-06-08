@@ -1,12 +1,14 @@
 <?php
 session_start();
 
+# author : Ayush
+# date : 04/06/2022
+# helper for Login 
+
 //function for validation of login
 
 $username = $_REQUEST['username'];
 $pwd = $_REQUEST['pwd'];
-
-
 
 require("../model/signup.php");
 

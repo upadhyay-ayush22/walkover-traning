@@ -1,4 +1,8 @@
 <?php
+# author : Ayush
+# date : 04/06/2022
+# establish the connection to the database for further functionalities
+
 $servername = "localhost";
 $username = "root";
 $password = "";

@@ -1,4 +1,9 @@
 <?php
+
+# author : Ayush
+# date : 06/06/2022
+# display the sorted list to both user and admin 
+
 session_start();
 ?>
 

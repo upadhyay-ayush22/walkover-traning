@@ -1,4 +1,8 @@
 <?php
+# author : Ayush
+# date : 05/06/2022
+# view booklist common for both user and admin
+
 session_start();
 ?>
 

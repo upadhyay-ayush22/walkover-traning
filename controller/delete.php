@@ -1,7 +1,11 @@
 <?php
 
-//for deletion of records
 
+# author : Ayush
+# date : 05/06/2022
+# helper for Curd model handels delete operation
+
+//for deletion of records
 session_start();
 if (isset($_SESSION['admin'])) {
     $id = $_GET["id"];

@@ -1,4 +1,9 @@
 <?php
+
+# author : Ayush
+# date : 04/06/2022
+# page will be shown to user if he try to acccess the admin url or functions
+
 session_start();
 
 ?>

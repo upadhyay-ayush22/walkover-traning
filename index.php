@@ -1,4 +1,9 @@
 <?php
+
+# author : Ayush
+# date : 03/06/2022
+# default page of the website 
+
 session_start();
 ?>
 <!DOCTYPE html>

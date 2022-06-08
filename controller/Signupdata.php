@@ -1,4 +1,8 @@
 <?php
+# author : Ayush
+# date : 04/06/2022
+# helper for signup controller recives dats from user and pass it to controller
+
 
 //takes the data from the form and  send it to the signup function in controller for validation
 

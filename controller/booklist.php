@@ -1,7 +1,12 @@
 <?php
 
+# author : Ayush
+# date : 05/06/2022
+# class for booklist display 
+
 class book
-{   //fetch the book list from model and send it 
+{   
+    //fetch the book list from model and send it 
     function Show()
     {
         require("../model/booklist.php");

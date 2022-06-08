@@ -1,4 +1,9 @@
 <?php
+# author : Ayush
+# date : 05/06/2022
+# display the form with the pre filled info of the user for updation 
+# only for  viisible admin 
+
 session_start();
 ?>
 

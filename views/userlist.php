@@ -1,4 +1,10 @@
 <?php
+
+# author : Ayush
+# date : 05/06/2022
+# shows the users list to the admin 
+# only visible to the admin 
+
 session_start();
 ?>
 

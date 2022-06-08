@@ -1,5 +1,9 @@
 <?php
 
+# author : Ayush
+# date : 04/06/2022
+# class to handel all signup and validate the data entered 
+
 class Signup
 {
 

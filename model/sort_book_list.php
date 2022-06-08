@@ -1,5 +1,7 @@
 <?php
-
+# author : Ayush
+# date : 06/06/2022
+#  class to handel all sorting related information of the book table  
 class sortbook
 {
         function ascname()

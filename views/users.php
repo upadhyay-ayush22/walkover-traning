@@ -1,4 +1,9 @@
 <?php
+
+# author : Ayush
+# date : 04/06/2022
+# Dashboard of the user contains of all the ajax related to  user funcutionality 
+
 session_start();
 ?>
 <!DOCTYPE html>

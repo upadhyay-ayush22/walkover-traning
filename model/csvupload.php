@@ -1,5 +1,8 @@
 <?php
-//class to insert data from csv file into database
+
+# author : Ayush
+# date : 08/06/2022
+# class to insert data from csv file into database
 
 
 class Csvinsert{

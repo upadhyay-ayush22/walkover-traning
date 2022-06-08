@@ -1,4 +1,9 @@
 <?php
+
+# author : Ayush
+# date : 04/06/2022
+# dashboard of  Admin contains all ajax function of admin pannel 
+
 session_start();
 if (!isset($_SESSION['admin'])) {
     header("Location: ../views/unauth.php");

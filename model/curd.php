@@ -1,6 +1,8 @@
 <?php
 
-//class for all curd operations
+# author : Ayush
+# date : 05/06/2022
+# class for all curd operations(i.e. update delete and make admin)
 
 class Curd
 {

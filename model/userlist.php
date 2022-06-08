@@ -1,5 +1,9 @@
 <?php
 
+# author : Ayush
+# date : 05/06/2022
+# class for fetching the userlist from the sql 
+
 class user1
 {
 

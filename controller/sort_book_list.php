@@ -1,9 +1,13 @@
 <?php
 
+# author : Ayush
+# date : 06/06/2022
+# class for  handling sorting books in asc/desc order 
+
 class sort_books
 {
 
-    //sorting the bbbok list according to the operation performed by the user 
+    //sorting the book list according to the operation performed by the user 
     
     function sortlist($type)
     {

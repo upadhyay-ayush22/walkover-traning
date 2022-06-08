@@ -1,5 +1,8 @@
 <?php
 
+# author : Ayush
+# date : 04/06/2022
+# class for inserting and matching the information while signup and login  
 
 class Connect
 {

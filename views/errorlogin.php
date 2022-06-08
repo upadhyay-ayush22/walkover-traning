@@ -1,4 +1,9 @@
 <?php
+
+# author : Ayush
+# date : 04/06/2022
+# shows error while login of the user 
+
 session_start();
 
 ?>

@@ -1,5 +1,9 @@
 <?php
 
+# author : Ayush
+# date : 05/06/2022
+# class to display the user list
+
 class user{
     // to show the user list data to the admin
     function Show()
