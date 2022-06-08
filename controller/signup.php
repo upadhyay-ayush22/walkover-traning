@@ -34,7 +34,7 @@ class Signup
 
         $obj1 = new Signup();
 
-        require("../model/signup.php");
+        // require("../model/signup.php");
         if ($obj1->validate($fn, $em, $cn)) {
             $obj = new Connect();
             return $obj->insertdb($fn, $username, $pwd, $em, $co, $dob, $cn, $type);

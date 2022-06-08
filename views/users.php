@@ -203,9 +203,13 @@ session_start();
         <form action="../controller/logout.php">
             <button class="logout"> Logout</button>
         </form>
+        
+            <form action="../views/users.php">
+                <button class="logout"> Back</button>
+            </form>
 
         <div id="main">
-            <p class="p"> Welcome !! <?php if (!empty($_GET['username'])) echo " " . $_SESSION['username'] ?>
+            <p class="p"> Welcome !! <?php echo " " . $_SESSION['username'] ?>
                 </br>
                 </br>
 

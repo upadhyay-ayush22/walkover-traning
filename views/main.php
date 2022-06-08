@@ -1,8 +1,17 @@
 <?php
 session_start();
+if (!isset($_SESSION['admin'])) {
+    header("Location: ../views/unauth.php");
+}
+
+if(isset($_POST["import"]))
+{
+    $file=$_FILES["csvfile"]["tmp_name"];
+    require_once("./csvupload.php");
+    $obj=new Csvupload();
+    $obj->csv($file);
+}
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +20,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
+    <link rel="stylesheet" href="../public/style.css">
 
     <style>
         body,
@@ -21,8 +31,8 @@ session_start();
         body {
             background-image: url(../Images/allback.jfif);
 
-            height: 80%;
-            background-repeat: no-repeat;
+            height: 100%;
+            background-repeat: repeat;
             background-size: cover;
             background-position: center;
 
@@ -50,6 +60,10 @@ session_start();
             font-size: 20px;
         }
 
+        table {
+            color: black;
+            border-radius: 20px;
+        }
         .button1 {
             background-color: grey;
             border: round;
@@ -255,19 +269,37 @@ session_start();
 
             exit();
         }
+        // function csvupload() {
+        //     var xmlhttp = new XMLHttpRequest();
+        //     xmlhttp.onreadystatechange = function() {
+        //         if (this.readyState == 4 && this.status == 200) {
+        //             document.getElementById("main").innerHTML = this.responseText;
+        //         }
+        //     };
+        //     xmlhttp.open("GET", "../views/csvupload.php", true);
+            
+        //     xmlhttp.send();
+
+        //     exit();
+        // }
+        
+       
+
+
     </script>
 </head>
 
 <body>
 
-    <?php
-    if (!isset($_SESSION['admin'])) {
-        header("Location: ../views/unauth.php");
-    } else {
 
-    ?> <div id="logout">
+<div id="logout">
             <form action="../controller/logout.php">
                 <button class="logout"> Logout</button>
+            </form>
+        </div>
+        <div id="logout">
+            <form action="../views/main.php">
+                <button class="logout"> Back</button>
             </form>
         </div>
         <div id="main">
@@ -282,14 +314,15 @@ session_start();
             <p class="pb">
                 <buttom class="button1" onclick="userlist()"> Click here to see Users list</button>
             </p>
+            <p class="pb">
+            <a href="../views/csvupload.php"><buttom class="button1" onclick="csvupload()"> Csv upload</button></a>
+                
+            </p>
 
 
         </div>
 
 
-    <?php
-    }
-    ?>
 
 </body>
 

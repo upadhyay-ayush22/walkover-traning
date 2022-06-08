@@ -26,7 +26,7 @@ session_start();
 
 <body>
     <?php
-    if (!isset($_SESSION['username'])) {
+    if (!isset($_SESSION['username'])and !isset($_SESSION['admin'])) {
         header("Location: ../views/errorlogin.php");
     } else {
 

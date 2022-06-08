@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Signup</title>
+    
     <style>
         table {
             color: black;
@@ -37,9 +41,9 @@
 
 <body>
 
-    <?php require("controller/signup.php");
-    $obj = new Signup();
-
+    <?php 
+    if(!isset($_SESSION['username']) and !isset($_SESSION['admin']))
+        {
     ?>
     <span>
         <h1 align="center"> Welcome to the book world </h1>
@@ -360,7 +364,17 @@
         </form>
 
     </table>
-
+<?php
+        }
+        else if(isset($_SESSION['username']))
+        {
+            header("Location: views/users.php");
+        }
+        else 
+        {
+            header("Location: views/main.php");
+        }
+?>
 
 
 </body>
